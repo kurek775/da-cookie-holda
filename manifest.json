@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Da holda",
+    "description": "Holds da cookie",
+    "version": "1.0",
+    "background": {
+      "service_worker": "service-worker.js",
+      "type": "module"
+    },
+    "permissions": ["scripting", "activeTab", "cookies"],
+    "action": {},
+    "host_permissions":["http://*/*","https://*/*"]  
+}
