@@ -8,6 +8,12 @@
       "type": "module"
     },
     "permissions": ["scripting", "activeTab", "cookies"],
-    "action": {},
-    "host_permissions":["http://*/*","https://*/*"]  
+    "action": {
+        "default_icon": {
+            "16": "icon.png",
+            "48": "icon.png",
+            "128": "icon.png"
+        }
+    },
+    "host_permissions": ["http://*/*", "https://*/*"]
 }
