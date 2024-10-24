@@ -29,6 +29,10 @@ function setLtpaToken2ForLocalhost(cookie) {
                         console.error(`Error setting LtpaToken2 for localhost:4200: ${chrome.runtime.lastError}`);
                     } else {
                         console.log(`LtpaToken2 set for localhost:4200:`, setCookie);
+                        chrome.tabs.reload(tab.id, {}, () => {
+                            console.log(`Tab ${tab.id} reloaded after setting LtpaToken2`);
+                        });
+
                     }
                 });
             }
